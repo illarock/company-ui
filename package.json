@@ -20,10 +20,6 @@
       "types": "./dist/components/index.d.mts",
       "import": "./dist/components/index.mjs"
     },
-    "./components/ui/button": {
-      "types": "./dist/components/ui/button.d.mts",
-      "import": "./dist/components/ui/button.mjs"
-    },
     "./components/ui/*": {
       "types": "./dist/components/ui/*.d.mts",
       "import": "./dist/components/ui/*.mjs"
