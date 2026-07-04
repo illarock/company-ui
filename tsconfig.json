@@ -24,12 +24,6 @@
 
     "forceConsistentCasingInFileNames": true,
 
-    "baseUrl": ".",
-
-    "paths": {
-      "@/*": ["src/*"]
-    },
-
     "types": ["react", "react-dom"],
 
     "noEmit": true
