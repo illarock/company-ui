@@ -117,7 +117,30 @@ export default function Home() {
 }
 ```
 
-Import the shared theme once.
+Import the shared theme once in `app/globals.css`.
+
+```css
+@import "@company/ui/styles/theme.css";
+```
+
+Do not add a second `@import "tailwindcss"` — the company theme already includes Tailwind, tokens, and `@source` scanning for package components.
+
+In `next.config.ts`:
+
+```ts
+const nextConfig = {
+  transpilePackages: ["@company/ui"],
+};
+```
+
+After updating the package, rebuild it and reinstall in your app:
+
+```bash
+cd company-ui && npm run build
+cd ../your-app && npm install
+```
+
+Alternative: import in `app/layout.tsx` instead of CSS `@import` if your bundler does not resolve package CSS paths:
 
 ```tsx
 import "@company/ui/styles/theme.css";
