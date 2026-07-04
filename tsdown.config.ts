@@ -32,9 +32,11 @@ export default defineConfig({
 
   treeshake: true,
 
-  external: [
-    "react",
-    "react-dom",
-    "next",
-  ],
+  hash: false,
+
+  copy: ["src/styles/theme.css", "src/styles/theme.css.d.ts"],
+
+  deps: {
+    neverBundle: ["react", "react-dom", "next"],
+  },
 });

@@ -10,9 +10,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/index.js",
-  "module": "./dist/index.js",
-  "types": "./dist/index.d.ts",
+  "types": "./dist/index.d.mts",
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
@@ -22,13 +20,24 @@
       "types": "./dist/components/index.d.mts",
       "import": "./dist/components/index.mjs"
     },
+    "./components/ui/button": {
+      "types": "./dist/components/ui/button.d.mts",
+      "import": "./dist/components/ui/button.mjs"
+    },
     "./components/ui/*": {
       "types": "./dist/components/ui/*.d.mts",
       "import": "./dist/components/ui/*.mjs"
-    }
+    },
+    "./theme.css": {
+      "types": "./dist/theme.css.d.ts",
+      "style": "./dist/theme.css",
+      "default": "./dist/theme.css"
+    },
+    "./package.json": "./package.json"
   },
   "scripts": {
     "build": "tsdown",
+    "prepare": "npm run build",
     "dev": "tsdown --watch",
     "clean": "rm -rf dist",
     "changeset": "changeset",
