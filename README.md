@@ -120,7 +120,7 @@ export default function Home() {
 Import the shared theme once.
 
 ```tsx
-import "@company/ui/theme.css";
+import "@company/ui/styles/theme.css";
 ```
 
 ---

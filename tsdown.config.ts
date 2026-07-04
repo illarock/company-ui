@@ -34,7 +34,7 @@ export default defineConfig({
 
   hash: false,
 
-  copy: ["src/styles/theme.css", "src/styles/theme.css.d.ts"],
+  copy: [{ from: "src/styles/*", to: "dist", flatten: false }],
 
   deps: {
     neverBundle: ["react", "react-dom", "next"],
