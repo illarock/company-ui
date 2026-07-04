@@ -1,5 +1,5 @@
 {
-  "name": "company-ui",
+  "name": "@company/ui",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -18,7 +18,6 @@
   "homepage": "https://github.com/illarock/company-ui#readme",
   "description": "",
   "dependencies": {
-    "@radix-ui/react-dialog": "^1.1.18",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^1.23.0",

@@ -76,7 +76,7 @@ npm run dev
 Inside your Next.js project:
 
 ```bash
-npm install ../company-ui
+npm install github:illarock/company-ui
 ```
 
 or
@@ -84,7 +84,7 @@ or
 ```json
 {
   "dependencies": {
-    "@company/ui": "file:../company-ui"
+    "@company/ui": "github:illarock/company-ui"
   }
 }
 ```
